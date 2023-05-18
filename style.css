@@ -121,6 +121,22 @@ footer {
         font-weight: bolder;
         color: black;
     }
+    
 }
-
+@media only screen and (max-widht:550px) {
+    .container{
+        overflow-y: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "content1"
+        "content2"
+        "content3"
+        "footer"
+        ;
+    }
+}
 
